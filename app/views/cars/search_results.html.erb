@@ -1,0 +1,6 @@
+<h1>Your Car Options</h1>
+
+<% @cars.each do |car| %>
+	<%= car.name %> <br> <br>
+	<img src="<%= car.image %>" alt="" /> <br> <br>
+<% end %>
