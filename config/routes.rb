@@ -6,6 +6,8 @@ MyApp::Application.routes.draw do
     end
   end
 
+  root to: 'cars#search'
+
   match '/search', to: 'cars#search'
   match '/new', to: 'cars#new'
 
