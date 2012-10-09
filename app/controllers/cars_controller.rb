@@ -1,8 +1,13 @@
 class CarsController < ApplicationController
 
   def create
-  	@car = Car.where("price < ? AND mpg > ? AND handling > ? AND interior > ? AND looks > ? AND legroom > ?", 
-  					params[:price], params[:mpg], params[:handling], params[:interior], params[:looks], params[:legroom]).first
+  	@car = Car.new(params[:car])
+    if @car.save
+      flash[:success] = "Car Data Saved Successfully!"
+      redirect_to @car
+    else
+      render 'new'
+    end
   end
 
   def new
@@ -22,4 +27,10 @@ class CarsController < ApplicationController
     @cars = Car.where("price < ? AND mpg > ? AND handling > ? AND interior > ? AND looks > ? AND legroom > ?", 
             car[:price], car[:mpg], car[:handling], car[:interior], car[:looks], car[:legroom])
   end
+
+  def index
+  end
 end
+
+
+#evening-refuge-9788

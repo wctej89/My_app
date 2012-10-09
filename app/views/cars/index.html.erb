@@ -1,0 +1,12 @@
+<h1>Welcome to Eficio</h1>
+<br>
+<h3>Cars currently in database </h3>
+
+<div class="row">
+  <div class="span6 offset3">
+    <% Car.all.each do |car| %>
+      <%= car.name %> <br> <br>
+      <img src="<%= car.image %>" alt="" /> <br> <br>
+  <% end %>
+  </div>
+</div>

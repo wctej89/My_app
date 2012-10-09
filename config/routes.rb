@@ -6,6 +6,9 @@ MyApp::Application.routes.draw do
     end
   end
 
+  match '/search', to: 'cars#search'
+  match '/new', to: 'cars#new'
+
 
 #i got rid of get cars/new and cars/create and rid of error for AR/class/nill
 

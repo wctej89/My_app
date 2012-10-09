@@ -2,8 +2,18 @@
   <aside class="span4">
     <section>
       <h1>
-        <%= @car.name %>
+        <b><%= @car.name %></b>
       </h1>
+      <body>
+      	<p><b>Price:</b> <%= @car.price %> <br>
+      		<b>MPG:</b> <%= @car.mpg %> <br>
+      		<b>Handling:</b> <%= @car.handling %> <br>
+      		<b>Interior:</b> <%= @car.interior %> <br>
+      		<b>Looks</b> <%= @car.looks%> <br>
+      		<b>Legroom:</b> <%= @car.legroom %> <br>
+      		<b>Image:</b> <img src="<%= @car.image %>" alt="" />
+      	</p>
+      </body>
     </section>
   </aside>
 </div>
