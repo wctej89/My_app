@@ -1,11 +1,16 @@
 <h1>Welcome to Eficio</h1>
-<br>
-<h3>Cars currently in database </h3>
+<h3>Cars currently in database </h3> <br>
 
 <div class="row">
   <div class="span6 offset3">
     <% Car.all.each do |car| %>
-      <%= car.name %> <br> <br>
+      <b><%= car.name %></b> <br> <br>
+      <p><b>Price:</b> <%= car.price %> <br>
+          <b>MPG:</b> <%= car.mpg %> <br>
+          <b>Handling:</b> <%= car.handling %> <br>
+          <b>Interior:</b> <%= car.interior %> <br>
+          <b>Looks</b> <%= car.looks%> <br>
+          <b>Legroom:</b> <%= car.legroom %> <br>
       <img src="<%= car.image %>" alt="" /> <br> <br>
   <% end %>
   </div>
