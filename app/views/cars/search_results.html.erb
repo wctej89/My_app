@@ -1,6 +1,12 @@
 <h1>Your Car Options</h1>
 
 <% @cars.each do |car| %>
-	<%= car.name %> <br> <br>
+	<b><%= car.name %></b> <br> <br>
+	<p><b>Price:</b> <%= car.price %> <br>
+          <b>MPG:</b> <%= car.mpg %> <br>
+          <b>Handling:</b> <%= car.handling %> <br>
+          <b>Interior:</b> <%= car.interior %> <br>
+          <b>Looks</b> <%= car.looks%> <br>
+          <b>Legroom:</b> <%= car.legroom %> <br>
 	<img src="<%= car.image %>" alt="" /> <br> <br>
 <% end %>

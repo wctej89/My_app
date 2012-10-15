@@ -2,7 +2,7 @@
   <aside class="span4">
     <section>
       <h1>
-        <b><%= @car.name %></b>
+        <b><%= @car.name %></b> <%= link_to "Edit", edit_car_path(@car) %> 
       </h1>
       <body>
       	<p><b>Price:</b> <%= @car.price %> <br>

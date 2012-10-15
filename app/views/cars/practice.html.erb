@@ -1,0 +1,8 @@
+<div class="form_row">
+    <label for="theme">Theme:</label>
+    <% [ 'need it', 'important', 'doesnt matter' ].each do |theme| %>
+      <br><%= radio_button_tag 'theme', theme, @theme == theme %>
+    <% end %>
+</div>
+
+

@@ -6,6 +6,7 @@
   <div class="span6 offset3">
     <%= form_for @car, :url =>{:action => "search_results"} do |f| %>
 
+      
       <%= f.label "Maximum Price" %>
       <%= f.text_field :price %>
 
@@ -13,7 +14,13 @@
       <%= f.text_field :mpg %>
 
       <%= f.label :handling %>
-      <%= f.text_field :handling %>
+      
+
+      <%= f.radio_button :handling, 1 %> 1
+      <%= f.radio_button :handling, 2 %> 2
+      <%= f.radio_button :handling, 3 %> 3
+      <%= f.radio_button :handling, 4 %> 4
+      <%= f.radio_button :handling, 5 %> 5
 
       <%= f.label :interior %>
       <%= f.text_field :interior %>

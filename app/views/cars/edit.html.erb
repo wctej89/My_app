@@ -1,0 +1,36 @@
+<h1>Welcome to Eficio</h1>
+<br>
+<h2>Update Data</h2>
+
+<div class="row">
+  <div class="span6 offset3">
+    <%= form_for(@car) do |f| %>
+
+      <%= f.label :name %>
+      <%= f.text_field :name %>
+
+      <%= f.label :price %>
+      <%= f.text_field :price %>
+
+      <%= f.label :mpg %>
+      <%= f.text_field :mpg %>
+
+      <%= f.label :handling %>
+      <%= f.text_field :handling %>
+
+      <%= f.label :interior %>
+      <%= f.text_field :interior %>
+
+      <%= f.label :looks %>
+      <%= f.text_field :looks %>
+
+      <%= f.label :legroom %>
+      <%= f.text_field :legroom %>
+
+      <%= f.label :image %>
+      <%= f.text_field :image %>
+
+      <%= f.submit "Save Changes", class: "btn btn-large btn-primary" %>
+    <% end %>
+  </div>
+</div>
