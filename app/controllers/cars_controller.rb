@@ -25,13 +25,15 @@ class CarsController < ApplicationController
   def search_results
     car = params[:car]
 
-    
-
     #Car.where("price <= ? AND mpg >= ? AND handling >= ? AND interior >= ? AND looks >= ? AND legroom >= ?", 
             #car[:price], car[:mpg], car[:handling], car[:interior], car[:looks], car[:legroom])
 
-    @cars = Car.price_less_than(params[:price]).mpg_greater_than(params[:mpg]).handling_greater_than(params[:handling]).interior_greater_than(params[:interior]).
-    looks_greater_than(params[:looks]).legroom_greater_than(params[:legroom])
+    @cars = Car.price_less_than(car[:price])
+                .mpg_greater_than(car[:mpg])
+                .handling_greater_than(car[:handling])
+                .interior_greater_than(car[:interior])
+                .looks_greater_than(car[:looks])
+                .legroom_greater_than(car[:legroom])
 
   end
 
@@ -40,6 +42,16 @@ class CarsController < ApplicationController
 
   def edit
     @car = Car.find(params[:id])
+  end
+
+  def update
+    @car = Car.find(params[:id])
+    if @car.update_attributes(params[:car])
+      flash[:success] = "Car updated"
+      redirect_to @car
+    else
+      render 'edit'
+    end
   end
 
   def practice

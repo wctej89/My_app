@@ -4,7 +4,7 @@
 <div class="row">
   <div class="span6 offset3">
     <% Car.all.each do |car| %>
-      <b><%= car.name %></b> <br> <br>
+      <b><%= car.name %></b> <%= link_to "Edit", edit_car_path(car) %>
       <p><b>Price:</b> <%= car.price %> <br>
           <b>MPG:</b> <%= car.mpg %> <br>
           <b>Handling:</b> <%= car.handling %> <br>
