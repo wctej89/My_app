@@ -18,7 +18,7 @@
 class Car < ActiveRecord::Base
   attr_accessible :name, :cartype, :image, :handling, :interior, :legroom, :looks, :mpg, :price, :id
 
-  scope :price_less_than, lambda { |value| where('price <=(?)', value) if value.present? }
+  scope :price_less_than, lambda {|value| where('price <=(?)', value) if value.present? }
   scope :mpg_greater_than, lambda { |value| where('mpg >= (?)', value) if value.present? }
   scope :handling_greater_than, lambda { |value| where('handling >= (?)', value) if value.present? }
   scope :interior_greater_than, lambda { |value| where('interior >= (?)', value) if value.present? }

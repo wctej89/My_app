@@ -25,6 +25,8 @@ class CarsController < ApplicationController
   def search_results
     car = params[:car]
 
+    important = 7
+
     #Car.where("price <= ? AND mpg >= ? AND handling >= ? AND interior >= ? AND looks >= ? AND legroom >= ?", 
             #car[:price], car[:mpg], car[:handling], car[:interior], car[:looks], car[:legroom])
 
