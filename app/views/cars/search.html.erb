@@ -16,7 +16,7 @@
             max: 200000,
             step: 5000,
             slide: function( event, ui ) {
-                $( "#car_price" ).val( "$" + ui.value );
+                $( "#car_price" ).val( ui.value );
             }
         });
 
@@ -60,7 +60,7 @@
             }
         });
 
-        $( "#car_price" ).val( $( "$" + "#sliderprice" ).slider( "value" ) );
+        $( "#car_price" ).val( $( "#sliderprice" ).slider( "value" ) );
         $( "#car_mpg" ).val( $( "#slidermpg" ).slider( "value" ) );
         $( "#car_handling" ).val( $( "#slider" ).slider( "value" ) );
         $( "#car_interior" ).val( $( "#sliderinterior" ).slider( "value" ) );
