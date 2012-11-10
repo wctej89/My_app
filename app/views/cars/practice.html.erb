@@ -35,3 +35,41 @@
  
 </body>
 </html>
+
+
+<!-- <%= f.radio_button :handling, 1 %> 1
+      <%= f.radio_button :handling, 2 %> 2
+      <%= f.radio_button :handling, 3 %> 3
+      <%= f.radio_button :handling, 4 %> 4
+      <%= f.radio_button :handling, 5 %> 5 -->
+
+      <!-- <%= f.label :handling %>
+      <%= f.text_field :handling, :placeholder => "Scale of 1 to 10" %> -->
+
+
+
+
+      
+      <!-- <%= f.label "Maximum Price" %>
+      <%= f.text_field :price %>
+
+      <%= f.label "Combined MPG" %>
+      <%= f.text_field :mpg %> -->
+
+      <!-- <label for="car_legroom">Legroom</label>
+      <input id="car_legroom" name="car[legroom]" style="border: 0; color: #f6931f; font-weight: bold;" />
+      <div id="slider"></div> -->
+
+
+      <!-- <%= f.label :interior %>
+      <%= f.text_field :interior, :placeholder => "Scale of 1 to 10" %>
+
+      <%= f.label :looks %>
+      <%= f.text_field :looks, :placeholder => "Scale of 1 to 10" %>
+
+      <%= f.label :legroom %>
+      <%= f.text_field :legroom, :placeholder => "inches" %> -->
+
+      
+    #Car.where("price <= ? AND mpg >= ? AND handling >= ? AND interior >= ? AND looks >= ? AND legroom >= ?", 
+            #car[:price], car[:mpg], car[:handling], car[:interior], car[:looks], car[:legroom])

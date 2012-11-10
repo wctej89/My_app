@@ -3,51 +3,37 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
+    <title>jQuery UI Slider - Snap to increments</title>
     <link rel="stylesheet" href="C:\Documents and Settings\TJ\rails_projects\my_app\app\assets\stylesheets\jquery-ui.css" />
     <link rel="stylesheet" href="C:\Documents and Settings\TJ\rails_projects\my_app\app\assets\stylesheets\test.css" />
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.1/jquery-ui.js"></script>
+    
 </head>
 
-<body style="background-color: white">
-  <div id="container">
+<h1>Welcome to Eficio</h1>
+
+<h2>Make your selections</h2>
+
+<div class="searchcontainer">
     <%= form_for @car, :url =>{:action => "search_results"} do |f| %>
 
-    <div class="searchcontainer">
-      <div style="padding: 20px;"
-          <p id="containerheader">Quick Start</p>
-          
-          <label for="car_price" id= "car_price_value" style="border: 0; color: white; font-size: 35px; float: right;" ></label> <br> <br>
+      <div id="accordion">
+        <h3>Price</h3>
+        <div>
+          <label for="car_price"><b>Maximum Price</b></label> <br>
+          <label for="car_price" id= "car_price_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
           <input type="hidden" id="car_price" value="" name="car[price]">
-          <div id="sliderprice" style="height: 10px; width: 400px; float: right;"></div> <br>
-
-          <label for="car_mpg" id= "car_mpg_value" style="border: 0; color: white; font-size: 35px; float: right;" ></label> <br><br>
+          <div id="sliderprice"></div> <br>
+        </div>
+      
+        <h3>MPG</h3>
+        <div>
+          <label for="car_mpg"><b>Lowest Desired MPG</b></label> <br>
+          <label for="car_mpg" id= "car_mpg_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
           <input type="hidden" id="car_mpg" value="" name="car[mpg]">
-          <div id="slidermpg" style="height: 10px; width: 400px; float: right;"></div> <br>
-        
-      </div>
-    </div>
-
-    <div class="welcomecontainer">
-      <p id="mysitetitle">E-FiCiO</p>
-    </div>
-
-    <div class="resultscontainer">
-      <p id="containerheader" style="margin-left: 5px;">Results</p>
-      <div id="ajaxinfo">
-      </div>
-    </div>
-
-    <div class="finetunecontainer">
-      <p id="containerheader" style="margin-left: 20px;">Fine Tune</p>
-    </div>
-
-    <div class="carinfocontainer">
-      <p id="containerheader" style="margin-left: 20px;">Car info</p>
-    </div>
-
-
-    <!-- <div id="accordion">    
+          <div id="slidermpg"></div> <br>
+        </div>
 
         <h3>Handling</h3>
         <div>
@@ -72,12 +58,17 @@
           <input type="hidden" id="car_looks" value="" name="car[looks]">
           <div id="sliderlooks"></div> <br>
         </div>
-    </div> <br> -->
+      </div> <br>
 
 
-      <%= f.submit "Find My Car", id: "ninja" %>
-    <% end %> 
+      <%= f.submit "Find My Car", class: "btn btn-large btn-primary" %>
+    <% end %>
 
+    
   </div>
-</body>
+</div>
+
+<div class="resultscontainer">
+
+</div>
 

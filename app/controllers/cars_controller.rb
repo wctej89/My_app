@@ -20,24 +20,30 @@ class CarsController < ApplicationController
   
   def search
     @car = Car.new
+
+
   end
 
   def search_results
     car = params[:car]
+    @cars = Car.search_query(car)
 
-    important = 7
+    respond_to do |format|
+      format.js
+      format.html
+    end
 
-    #Car.where("price <= ? AND mpg >= ? AND handling >= ? AND interior >= ? AND looks >= ? AND legroom >= ?", 
-            #car[:price], car[:mpg], car[:handling], car[:interior], car[:looks], car[:legroom])
+  end
 
-    @cars = Car.price_less_than(car[:price])
+
+=begin @cars = Car.price_less_than(car[:price])
                 .mpg_greater_than(car[:mpg])
                 .handling_greater_than(car[:handling])
                 .interior_greater_than(car[:interior])
                 .looks_greater_than(car[:looks])
                 .legroom_greater_than(car[:legroom])
+=end
 
-  end
 
   def index
   end
@@ -58,7 +64,7 @@ class CarsController < ApplicationController
 
   def practice
   end
+
+  def testing
+  end
 end
-
-
-#evening-refuge-9788

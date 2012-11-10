@@ -1,12 +1,30 @@
-$(function() {
+jQuery.ajaxSetup({ 
+  'beforeSend': function(xhr) {xhr.setRequestHeader("Accept", "text/javascript")}
+})
+
+
+$(document).ready(function() {
+    console.log( 'car.js loaded' );
+
+    jQuery.fn.submitWithAjax = function() {
+        this.submit(function() {
+            $.post(this.action, $(this).serialize(), null, "script");
+            return false;
+        })
+        return this;
+    };
         $( "#sliderprice" ).slider({
             value:200000,
             min: 10000,
             max: 200000,
             step: 5000,
+
             slide: function( event, ui ) {
                 $( "#car_price" ).val( ui.value );
                 $( "#car_price_value" ).text( "$" + ui.value);
+                
+                $("#new_car").submitWithAjax();
+                $("#ninja").click()
             }
         });
 
@@ -60,6 +78,10 @@ $(function() {
         $( "#car_interior" ).val( $( "#sliderinterior" ).slider( "value" ) );
         $( "#car_looks" ).val( $( "#sliderlooks" ).slider( "value" ) );
         $( "#car_legroom" ).val( $( "#sliderlegroom" ).slider( "value" ) );
+
         
-    });
+});
+
+
+
 

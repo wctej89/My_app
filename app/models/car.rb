@@ -24,5 +24,14 @@ class Car < ActiveRecord::Base
   scope :interior_greater_than, lambda { |value| where('interior >= (?)', value) if value.present? }
   scope :looks_greater_than, lambda { |value| where('looks >= (?)', value) if value.present? }
   scope :legroom_greater_than, lambda { |value| where('legroom >= (?)', value) if value.present? }
-
+	
+  def self.search_query(search)
+  	p search
+  	return self.price_less_than(search[:price])
+                .mpg_greater_than(search[:mpg])
+                .handling_greater_than(search[:handling])
+                .interior_greater_than(search[:interior])
+                .looks_greater_than(search[:looks])
+                .legroom_greater_than(search[:legroom])
+  end
 end

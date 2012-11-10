@@ -1,0 +1,102 @@
+#container {
+  height: 100%;
+  width: 100%; 
+}
+
+.welcomecontainer {
+	position: absolute;
+	height: 360px;
+	width: 300px;
+	left: 717px;
+	top: 2px;
+	margin: 8px;
+	background-color: #9C4274;
+
+}
+
+.searchcontainer {
+	position:absolute;
+	left:97px;
+	top:2px;
+	margin:8px;
+	width: 610px;
+	height: 360px;
+	background-color:#EC663C;
+}
+
+.resultscontainer {
+	position:absolute;
+	left:1027px;
+	top:2px;
+	margin: 8px;
+	width: 300px;
+	height: 730px;
+	background-color: #12B0C5;
+}
+
+.finetunecontainer {
+	position: absolute;
+	top: 372px;
+	left: 97px;
+	width: 300px;
+	height: 360px;
+	margin: 8px;
+	background-color: #47bbb3;
+}
+
+.carinfocontainer {
+	position: absolute;
+	left: 407px;
+	top: 372px;
+	width: 610px;
+	height: 360px;
+	margin: 8px;
+	background-color: #ff9618;
+}
+
+#containerheader 
+{
+	font-size: 30px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.7);
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.sliderstyle {
+	font-size: 30px;
+	font-weight: 200;
+}
+
+#mysitetitle {
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#ajaxinfo {
+	padding: 10px;
+}
+
+#ajaxinfo img {
+	width: 50%;
+	height: 17%;
+}
+
+#ajaxinfo p {
+	float: right;
+	color: white;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin-right: 18px;
+	margin-top: 30px;
+}
+
+#ajaxinfo kobe {
+	color: white;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#ninja
+{
+visibility:hidden;
+}
