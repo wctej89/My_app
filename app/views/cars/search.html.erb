@@ -29,17 +29,44 @@
     </div>
 
     <div class="welcomecontainer">
-      <p id="mysitetitle">E-FiCiO</p>
+      <p id="mysitetitle" style="color: #9C4274;">E-FICIO</p> <br> <br> <br> <br>
+      
+      <p id="logo" style="font-size: 81px; margin-left: 72px; color: white; font-family:'Arial';">E-ficio</p>
+
     </div>
 
     <div class="resultscontainer">
-      <p id="containerheader" style="margin-left: 5px;">Results</p>
+      <p id="containerheader" style="margin-left: 18px;">Results</p>
       <div id="ajaxinfo">
       </div>
     </div>
 
     <div class="finetunecontainer">
-      <p id="containerheader" style="margin-left: 20px;">Fine Tune</p>
+          
+          <p id="containerheader" style="margin-left: 20px;">Fine Tune</p>
+          
+          <div id="accordion" style="width: 270px; margin-left: 15px;">    
+            <h3>Handling</h3>
+            <div>
+              <label for="car_handling" id= "car_handling_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
+              <input type="hidden" id="car_handling" value="" name="car[handling]">
+              <div id="sliderhandling"></div> <br>
+            </div>
+
+            <h3>Interior</h3>
+            <div>
+              <label for="car_interior" id= "car_interior_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
+              <input type="hidden" id="car_interior" value="" name="car[interior]">
+              <div id="sliderinterior"></div> <br>
+            </div>
+
+            <h3>Looks</h3>
+            <div>
+              <label for="car_looks" id= "car_looks_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
+              <input type="hidden" id="car_looks" value="" name="car[looks]">
+            <div id="sliderlooks"></div> <br>
+            </div>
+          </div> <br>
     </div>
 
     <div class="carinfocontainer">
@@ -47,32 +74,7 @@
     </div>
 
 
-    <!-- <div id="accordion">    
-
-        <h3>Handling</h3>
-        <div>
-          <label for="car_handling"><b>Handling</b></label> <br>
-          <label for="car_handling" id= "car_handling_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
-          <input type="hidden" id="car_handling" value="" name="car[handling]">
-          <div id="sliderhandling"></div> <br>
-        </div>
-
-        <h3>Interior</h3>
-        <div>
-          <label for="car_interior"><b>Interior</b></label> <br>
-          <label for="car_interior" id= "car_interior_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
-          <input type="hidden" id="car_interior" value="" name="car[interior]">
-          <div id="sliderinterior"></div> <br>
-        </div>
-
-        <h3>Looks</h3>
-        <div>
-          <label for="car_looks"><b>Looks</b></label> <br>
-          <label for="car_looks" id= "car_looks_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 3em; text-align: right;" ></label> <br>
-          <input type="hidden" id="car_looks" value="" name="car[looks]">
-          <div id="sliderlooks"></div> <br>
-        </div>
-    </div> <br> -->
+ 
 
 
       <%= f.submit "Find My Car", id: "ninja" %>

@@ -14,12 +14,12 @@ $(document).ready(function() {
         return this;
     };
         $( "#sliderprice" ).slider({
-            value:200000,
+            value: 80000,
             min: 10000,
-            max: 200000,
+            max: 80000,
             step: 5000,
 
-            slide: function( event, ui ) {
+            change: function( event, ui ) {
                 $( "#car_price" ).val( ui.value );
                 $( "#car_price_value" ).text( "$" + ui.value);
                 
@@ -36,6 +36,9 @@ $(document).ready(function() {
             slide: function( event, ui ) {
                 $( "#car_mpg" ).val( ui.value );
                 $( "#car_mpg_value" ).text(ui.value);
+
+                $("#new_car").submitWithAjax();
+                $("#ninja").click()
             }
         });
 
@@ -47,6 +50,9 @@ $(document).ready(function() {
             slide: function( event, ui ) {
                 $( "#car_handling" ).val( ui.value );
                 $( "#car_handling_value" ).text(ui.value);
+
+                $("#new_car").submitWithAjax();
+                $("#ninja").click()
             }
         });
 
@@ -58,6 +64,9 @@ $(document).ready(function() {
             slide: function( event, ui ) {
                 $( "#car_interior" ).val( ui.value );
                 $( "#car_interior_value" ).text(ui.value);
+
+                $("#new_car").submitWithAjax();
+                $("#ninja").click()
             }
         });
 
@@ -69,6 +78,9 @@ $(document).ready(function() {
             slide: function( event, ui ) {
                 $( "#car_looks" ).val( ui.value );
                 $( "#car_looks_value" ).text(ui.value);
+
+                $("#new_car").submitWithAjax();
+                $("#ninja").click()
             }
         });
 
