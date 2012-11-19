@@ -13,11 +13,12 @@ $grayMediumLight: #eaeaea;
 /* universal */
 
 html {
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 body {
-  padding-top: 60px;
+  padding-top: 5px;
 }
 
 section {
@@ -141,4 +142,3 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
-

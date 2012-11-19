@@ -1,4 +1,6 @@
 MyApp::Application.routes.draw do
+  resources :feedback, :only => [:new, :create]
+
   resources :cars do
     collection do
       post 'search_results'
