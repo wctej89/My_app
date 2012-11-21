@@ -99,3 +99,10 @@
 #ninja {
 	visibility:hidden;
 }
+
+#sliderlabel {
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
