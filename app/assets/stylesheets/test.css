@@ -106,3 +106,9 @@
 	color: white;
 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
+
+#nike {
+	overflow: hidden;
+	width: 500px;
+	height: 280px;
+}
