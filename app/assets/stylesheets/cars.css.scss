@@ -142,3 +142,7 @@ input, textarea, select, .uneditable-input {
   margin-bottom: 15px;
   @include box_sizing;
 }
+
+.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+  width: 590px;
+}
