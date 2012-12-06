@@ -1,10 +1,15 @@
 <% @cars.each do |car| %>
-    <kobe><b><%= link_to car.name, car_path(car), :target => "showinfo" %><b></kobe>  <br> 
-	<%= link_to image_tag(car.image), car_path(car), :target => "showinfo" %>
-	
-	<p>
-		<b>Price:</b> <%= car.price %> <br>
+  <%= link_to car_path(car), :remote => true do %>
+    <div id="resultscarbox">
+        <kobe style= "font-weight: bold;"><%= car.name %></kobe>  <br> 
+	      <%= image_tag(car.image) %>
+	   <p>
+		    <b>Price:</b> <%= car.price %> <br>
         <b>MPG:</b> <%= car.mpg %> <br>
         <b>Handling:</b> <%= car.handling %> <br>
-    </p> <br> <br>
+     </p>
+    </div>
+  <% end %>
 <% end %>
+
+

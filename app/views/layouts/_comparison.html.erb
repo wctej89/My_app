@@ -1,0 +1,25 @@
+<head>  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $( "#tarbaz<%= @car.id %>" ).click(function() {
+            $( '#foobar<%= @car.id %>' ).remove();
+      });
+    });
+  </script>
+  
+</head>
+  <div class="compareinfo" id="foobar<%= @car.id %>" style="float: left; padding-left: 15px;">
+      <p style= "text-align: left; font-size: 1.3em;">
+        <b><%= @car.name %></b>
+        <a href="#" class="delpartial" id="tarbaz<%= @car.id %>" style="font-weight: bold; color: rgb(77, 75, 75);">x</a>  
+      </p>
+      <body style= "color: white; background-color: #ff9618;">
+        <p><b>Price:</b> <%= @car.price %> <br>
+          <b>MPG:</b> <%= @car.mpg %> <br>
+          <b>Handling:</b> <%= @car.handling %> <br>
+          <b>Interior:</b> <%= @car.interior %> <br>
+          <b>Looks</b> <%= @car.looks%> <br>
+          <b>Legroom:</b> <%= @car.legroom %> <br>
+        </p>
+      </body>
+  </div>

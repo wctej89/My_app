@@ -16,6 +16,11 @@ class CarsController < ApplicationController
 
   def show
   	@car = Car.find(params[:id])
+
+    respond_to do |format|
+      format.js
+      format.html
+    end
   end
   
   def search
@@ -32,7 +37,10 @@ class CarsController < ApplicationController
       format.js
       format.html
     end
+  end
 
+  def comparison
+    @car = Car.find(params[:id])
   end
 
 

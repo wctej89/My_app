@@ -32,7 +32,7 @@ $(document).ready(function() {
             value:0,
             min: 0,
             max: 60,
-            step: 1,
+            step: 5,
             slide: function( event, ui ) {
                 $( "#car_mpg" ).val( ui.value );
                 $( "#car_mpg_value" ).text(ui.value);
@@ -45,11 +45,31 @@ $(document).ready(function() {
         $( "#sliderhandling" ).slider({
             value:0,
             min: 0,
-            max: 10,
-            step: 1,
+            max: 8,
+            step: 2,
             slide: function( event, ui ) {
                 $( "#car_handling" ).val( ui.value );
                 $( "#car_handling_value" ).text(ui.value);
+
+                if ( ui.value <= 2 ) {
+                    $("#car_handling_value").text("Don't Care");
+                }
+
+                else if ( ui.value == 4 ) {
+                    $("#car_handling_value").text("Average");
+                }
+
+                else if ( ui.value == 6 ) {
+                    $("#car_handling_value").text("Very Good");
+                }
+
+                else if ( ui.value == 8 ) {
+                    $("#car_handling_value").text("Top Notch");
+                }
+
+                else {
+                    $("#car_handling_value").text("Error");
+                }
 
                 $("#new_car").submitWithAjax();
                 $("#ninja").click()
@@ -91,6 +111,11 @@ $(document).ready(function() {
         $( "#car_looks" ).val( $( "#sliderlooks" ).slider( "value" ) );
         $( "#car_legroom" ).val( $( "#sliderlegroom" ).slider( "value" ) );
 
+        $(".nuke").click(function() {
+            $("#containerforpartial").html("");
+        });
+        
+        
         
 });
 
