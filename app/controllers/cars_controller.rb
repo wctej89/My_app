@@ -39,8 +39,7 @@ class CarsController < ApplicationController
     end
   end
 
-  def comparison
-    @car = Car.find(params[:id])
+  def research
   end
 
 
