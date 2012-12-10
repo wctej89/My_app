@@ -8,6 +8,8 @@
   </script>
   
 </head>
+
+
   <div class="compareinfo" id="foobar<%= @car.id %>" style="float: left; padding-left: 15px;">
       <p style= "text-align: left; font-size: 1.3em;">
         <b><%= @car.name %></b>
@@ -20,6 +22,8 @@
           <b>Interior:</b> <%= @car.interior %> <br>
           <b>Looks</b> <%= @car.looks%> <br>
           <b>Legroom:</b> <%= @car.legroom %> <br>
+          <%= link_to 'Research', car_path(@car), :target => "researchinfo" %>
+          
         </p>
       </body>
   </div>

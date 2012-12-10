@@ -32,7 +32,7 @@ s,!1),this.addEventListener("mousewheel",s,!1)):document.attachEvent("onmousewhe
     </script>
 </head>
 
-<body style="background-color: white">
+<body style="background-color: #e9edf1;">
   <div id="container">
     <%= form_for @car, :url =>{:action => "search_results"} do |f| %>
 
@@ -43,18 +43,18 @@ s,!1),this.addEventListener("mousewheel",s,!1)):document.attachEvent("onmousewhe
           <p id="sliderlabel">Price</p>
           <label for="car_price" id= "car_price_value" style="border: 0; color: white; font-size: 35px; float: right;" ></label> <br> <br>
           <input type="hidden" id="car_price" value="" name="car[price]">
-          <div id="sliderprice" style="height: 10px; width: 400px; float: right;"></div> <br>
+          <div id="sliderprice" style="height: 10px; width: 65%; float: right;"></div> <br>
 
           <p id="sliderlabel">MPG</p>
           <label for="car_mpg" id= "car_mpg_value" style="border: 0; color: white; font-size: 35px; float: right;" ></label> <br><br>
           <input type="hidden" id="car_mpg" value="" name="car[mpg]">
-          <div id="slidermpg" style="height: 10px; width: 400px; float: right;"></div> <br>
+          <div id="slidermpg" style="height: 10px; width: 65%; float: right;"></div> <br>
         
       </div>
     </div>
 
     <div id="welcomecontainer">      
-      <p id="lakers" style="font-size: 81px; margin-left: 72px; color: white; font-family:'Arial'; margin-top: 263px;">E-ficio</p>
+      <p id="lakers" style="font-size: 6.2em; margin-left: 24%; color: white; font-family:'Arial'; margin-top: 87.5%;">E-ficio</p>
     </div>
 
     <div id="resultscontainer">
@@ -67,7 +67,7 @@ s,!1),this.addEventListener("mousewheel",s,!1)):document.attachEvent("onmousewhe
           
           <p id="containerheader" style="margin-left: 20px;">Fine Tune</p>
           
-          <div id="accordion" style="width: 270px; margin-left: 15px;">    
+          <div id="accordion" style="width: 90%; margin-left: 15px;">    
             <h3>Handling</h3>
             <div>
               <label for="car_handling" id= "car_handling_value" style="border: 0; color: #f6931f; font-weight: bold; font-size: 2em; text-align: right;" ></label> <br>
@@ -100,12 +100,16 @@ s,!1),this.addEventListener("mousewheel",s,!1)):document.attachEvent("onmousewhe
         <div id="containerforpartial">
         </div>
       </div>
-      <!-- <iframe src="cars/6" style= "margin-left: 10px;" width="590" height="290" frameborder="0" name= "showinfo"></iframe> -->
+      
     </div>
 
       <%= f.submit "Find My Car", id: "ninja" %>
     <% end %> 
 
+  </div>
+  <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
+  <div id="researchiframe">
+    <iframe src="" style= "margin-left: 10px;" width="590" height="290" frameborder="0" name= "researchinfo"></iframe> 
   </div>
   
 </body>

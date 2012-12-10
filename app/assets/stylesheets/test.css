@@ -8,59 +8,59 @@
 }
 
 #welcomecontainer {
-	position: absolute;
-	height: 360px;
-	width: 300px;
-	left: 717px;
-	top: 2px;
-	margin: 8px;
-	background-color: #9C4274;
+position: absolute;
+height: 46.1%;
+width: 20.8%;
+left: 49.8%;
+top: .75%;
+margin: .55%;
+background-color: #9C4274;
 
 }
 
 #searchcontainer {
-	position:absolute;
-	left:97px;
-	top:2px;
-	margin:8px;
-	width: 610px;
-	height: 360px;
-	background-color:#EC663C;
+	position: absolute;
+	left: 6.72%;
+	top: .75%;
+	margin: .55%;
+	width: 42.4%;
+	height: 46.1%;
+	background-color: #EC663C;
 }
 
 #resultscontainer {
-	position:absolute;
-	left:1027px;
-	top:2px;
-	margin: 8px;
-	width: 300px;
-	height: 730px;
-	background-color: #12B0C5;
+	position: absolute;
+left: 71.35%;
+top: .75%;
+margin: .55%;
+width: 20.8%;
+height: 93.5%;
+background-color: #12B0C5;
 }
 
 #finetunecontainer {
 	position: absolute;
-	top: 372px;
-	left: 97px;
-	width: 300px;
-	height: 360px;
-	margin: 8px;
-	background-color: #47bbb3;
+top: 48.1%;
+left: 6.72%;
+width: 20.8%;
+height: 46.1%;
+margin: .55%;
+background-color: #47bbb3;
 }
 
 #carinfocontainer {
 	position: absolute;
-	left: 407px;
-	top: 372px;
-	width: 610px;
-	height: 360px;
-	margin: 8px;
-	background-color: #ff9618;
+left: 28.25%;
+top: 48.1%;
+width: 42.4%;
+height: 46.1%;
+margin: .55%;
+background-color: #ff9618;
 }
 
 #containerheader 
 {
-	font-size: 30px;
+	font-size: 2.3em;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.7);
 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -68,7 +68,7 @@
 
 #containerheaderinfo 
 {
-	font-size: 30px;
+	font-size: 2.3em;
 	font-weight: 400;
 	color: rgba(255, 255, 255, 0.7);
 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -76,7 +76,7 @@
 }
 
 .sliderstyle {
-	font-size: 30px;
+	font-size: 2.3em;
 	font-weight: 200;
 }
 
@@ -117,7 +117,7 @@
 }
 
 #sliderlabel {
-	font-size: 20px;
+	font-size: .7em;
 	font-weight: 400;
 	color: white;
 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -140,8 +140,8 @@
 }
 
 #comparisoncontainer {
-	height: 290px;
-	width: 590px;
+	height: 80%;
+	width: 96.5%;
 	background-color: #ff9618;
 	border-radius: 5px;
 	margin-left: 10px;
@@ -202,4 +202,9 @@
 
 .compareinfo {
 	width: 130px;
+}
+
+#researchcontainer {
+	width: 700px;
+	
 }

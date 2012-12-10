@@ -40,6 +40,7 @@ class CarsController < ApplicationController
   end
 
   def research
+    
   end
 
 
