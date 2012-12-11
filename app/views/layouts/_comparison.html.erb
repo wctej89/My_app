@@ -12,7 +12,7 @@
 
   <div class="compareinfo" id="foobar<%= @car.id %>" style="float: left; padding-left: 15px;">
       <p style= "text-align: left; font-size: 1.3em;">
-        <b><%= @car.name %></b>
+        <a href="<%= car_path(@car) %>" target="researchinfo" class="canada"><%= @car.name %></a>
         <a href="#" class="delpartial" id="tarbaz<%= @car.id %>" style="font-weight: bold; color: rgb(77, 75, 75);">x</a>  
       </p>
       <body style= "color: white; background-color: #ff9618;">
@@ -22,8 +22,19 @@
           <b>Interior:</b> <%= @car.interior %> <br>
           <b>Looks</b> <%= @car.looks%> <br>
           <b>Legroom:</b> <%= @car.legroom %> <br>
-          <%= link_to 'Research', car_path(@car), :target => "researchinfo" %>
-          
-        </p>
+          <%= link_to 'Rkjkjk', car_path(@car), :target => "researchinfo", :id => 'starwars' %>
       </body>
+      <script type="text/javascript">
+        $(document).ready(function() {
+          $('.canada').click(function() {
+            $('#starwars').trigger("click");
+          });
+          $(function(){
+            $('#starwars').click(function(){
+              $('html, body').animate({ scrollTop: $('#researchiframe').offset().top }, 3000);
+              return false;
+            });
+          });
+        });
+      </script>
   </div>

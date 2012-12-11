@@ -113,10 +113,8 @@ $(document).ready(function() {
 
         $(".nuke").click(function() {
             $("#containerforpartial").html("");
-        });
-        
-        
-        
+        }); 
+         
 });
 
 

@@ -1,6 +1,6 @@
-<!doctype html>
- 
-<html lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta charset="utf-8" />
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
@@ -19,12 +19,12 @@ s,!1),this.addEventListener("mousewheel",s,!1)):document.attachEvent("onmousewhe
     <script type="text/javascript">
         jQuery(document).ready(function($) {
           $('#ajaxinfo').slimScroll({
-            height: '650px',
+            height: '90%',
                   railVisible: true,
                   alwaysVisible: true
           });
           $('#containerforpartial').slimScroll({
-                  height: '275px',
+                  height: '97%',
                   railVisible: true,
                   alwaysVisible: true
           });
@@ -54,7 +54,7 @@ s,!1),this.addEventListener("mousewheel",s,!1)):document.attachEvent("onmousewhe
     </div>
 
     <div id="welcomecontainer">      
-      <p id="lakers" style="font-size: 6.2em; margin-left: 24%; color: white; font-family:'Arial'; margin-top: 87.5%;">E-ficio</p>
+      <p id="lakers" style="font-size: 520%; margin-left: 24%; color: white; font-family:'Arial'; margin-top: 87.5%;">E-ficio</p>
     </div>
 
     <div id="resultscontainer">
@@ -108,9 +108,18 @@ s,!1),this.addEventListener("mousewheel",s,!1)):document.attachEvent("onmousewhe
 
   </div>
   <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> <br> 
-  <div id="researchiframe">
-    <iframe src="" style= "margin-left: 10px;" width="590" height="290" frameborder="0" name= "researchinfo"></iframe> 
-  </div>
   
+  <div id="researchiframe">
+    <iframe src="" style= "margin-left: 10px;" width="965" height="1000" frameborder="0" name= "researchinfo"></iframe> 
+  </div>
+
+  <script type="text/javascript">
+    $(function(){
+      $('#starwars').click(function(){
+        $('html, body').animate({ scrollTop: $('#researchiframe').offset().top }, 3000);
+        return false;
+      });
+    });
+  </script>
 </body>
 </html>

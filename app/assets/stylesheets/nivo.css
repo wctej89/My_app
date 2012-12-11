@@ -10,6 +10,12 @@ Author: Gilbert Pellegrom
 Author URI: http://dev7studios.com
 */
 
+.slider-wrapper.theme-nivo {
+width: 960px;
+height: 408px;
+margin: 6px 0 0 -30px;
+}
+
 .slider-wrapper.theme-nivo { position: relative; }
 .theme-nivo .nivoSlider {
 	position:relative;
@@ -30,9 +36,9 @@ Author URI: http://dev7studios.com
     background:url(control-nav.png) no-repeat;
     width:72px;
     height:13px;
+    bottom: -195px;
 	position:absolute;
 	left:50%;
-	bottom:15px;
     margin-left:-51px; /* Tweak this to center bullets */
     z-index:210;
     padding:15px 13px 15px 17px;
@@ -78,14 +84,14 @@ Author URI: http://dev7studios.com
 .theme-nivo a.nivo-nextNav {
 	background-position:-43px 0;
 	right:390px;
-    top:350px;
+    top:560px;
 }
 .theme-nivo a.nivo-nextNav:hover {
 	background-position:-43px -43px;
 }
 .theme-nivo a.nivo-prevNav {
 	left:390px;
-    top:350px;
+    top:560px;
 }
 .theme-nivo a.nivo-prevNav:hover {
 	background-position:0 -43px;
