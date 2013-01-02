@@ -51,22 +51,21 @@ $(document).ready(function() {
                 $( "#car_handling" ).val( ui.value );
                 $( "#car_handling_value" ).text(ui.value);
 
-                if ( ui.value <= 2 ) {
+                if ( ui.value <= 1 ) {
                     $("#car_handling_value").text("Don't Care");
                 }
-
+                else if ( ui.value == 2) {
+                    $("#car_handling_value").text("Could care less");
+                }
                 else if ( ui.value == 4 ) {
                     $("#car_handling_value").text("Average");
                 }
-
                 else if ( ui.value == 6 ) {
                     $("#car_handling_value").text("Very Good");
                 }
-
                 else if ( ui.value == 8 ) {
                     $("#car_handling_value").text("Top Notch");
                 }
-
                 else {
                     $("#car_handling_value").text("Error");
                 }

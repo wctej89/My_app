@@ -13,7 +13,7 @@ Author URI: http://dev7studios.com
 .slider-wrapper.theme-nivo {
 width: 960px;
 height: 408px;
-margin: 6px 0 0 -30px;
+margin: 3px 0 0 -30px;
 }
 
 .slider-wrapper.theme-nivo { position: relative; }
@@ -36,8 +36,8 @@ margin: 6px 0 0 -30px;
     background:url(control-nav.png) no-repeat;
     width:72px;
     height:13px;
-    bottom: -195px;
-	position:absolute;
+    bottom: 0px;
+	position:relative;
 	left:50%;
     margin-left:-51px; /* Tweak this to center bullets */
     z-index:210;

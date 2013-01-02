@@ -91,22 +91,22 @@ background-color: #ff9618;
 	padding: 10px;
 }
 
-#ajaxinfo img {
+#resultscarbox img {
 	width: 50%;
 	height: 18.8%;
-	padding-left: 10px;
-	padding-bottom: 7px;
+	padding-left: 3.8%;
+	padding-bottom: 2.3%;
 }
 
-#ajaxinfo p {
+#resultscarbox p {
 	float: right;
 	color: white;
 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
-	margin-right: 8%;
+	margin-right: 7%;
 	margin-top: 10%;
 }
 
-#ajaxinfo kobe {
+#resultscarbox kobe {
 	color: white;
 	font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
 	padding-left: 10px;
@@ -125,7 +125,8 @@ background-color: #ff9618;
 
 #resultscarbox {
 	padding-top: 10px;
-	width: 270px;
+	width: 96%;
+	height: auto;
 }
 
 #resultscarbox:hover {
@@ -222,15 +223,15 @@ box-shadow: 0 1px 3px #8493a6;
     border-radius: 6px;
 }
 .horizontal-nav ul {
-    background: #128F9A;
+    background: rgb(80, 81, 82);
     float: left;
     text-align: center;
-    border-radius: 6px;
-    border: 1px solid #0e7079;
+    border-radius: 3px;
+    
 }
 .horizontal-nav ul li {
     float: left;
-    border-left: 1px solid #0e7079;
+    border-left: 1px solid rgb(46, 47, 48);
 }
 .horizontal-nav ul li:first-child {
     border-left: 0 none;
@@ -239,14 +240,16 @@ box-shadow: 0 1px 3px #8493a6;
     display: block;
     padding: 10px 20px;
     color: #fff;
+    font-size: 1.1em;
     border-top: 1px solid rgba(255,255,255, 0.25);
     border-left: 1px solid rgba(255,255,255, 0.25);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 .horizontal-nav ul li:first-child a {
     border-left: 0 none;
 }
 .horizontal-nav ul li a:hover {
-    background: #12808a;
+    background: rgb(243, 158, 6);
 }
 .horizontal-nav ul li:first-child a {
     border-top-left-radius: 6px;
@@ -295,4 +298,45 @@ box-shadow: 0 1px 3px #8493a6;
 }.canada:active {
 	position:relative;
 	top:1px;
+}
+
+#lakers {
+	font-size: 81px; margin-left: 24%; color: white; font-family:'Arial'; margin-top: 106.2%;
+}
+
+.dotted-bar2 {
+width: 100%;
+height: 44px;
+position: fixed;
+z-index: 300;
+text-align: center;
+bottom: 0%;
+}
+
+.dotted-bar2 a, .dotted-bar3 a {
+display: inline-block;
+}
+
+.top {
+background: url(http://catalystclass.com/wp-content/themes/ViewPoint/images/top.png) no-repeat;
+width: 223px;
+height: 34px;
+top: 6px;
+position: relative;
+margin: auto;
+display: inline-block;
+}
+
+.top:hover{background-position:0 -34px}
+
+@media (min-width: 700px) {
+    p { font-size: 81%; }
+    #lakers { font-size: 55px; margin-top: 131.2%;}
+    #resultscarbox img { height: 5%;}
+    #resultscarbox p {margin-right: 0%;}
+    #duke {margin-left: 78%;}
+}
+
+@media (min-width: 1200px) {
+    #resultscarbox img { height: 18.8%;}
 }
